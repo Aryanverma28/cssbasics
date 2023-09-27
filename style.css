@@ -1,0 +1,136 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100vw;
+    height: 80px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+#brand{
+    font-size: 2.3rem;
+    color:rgb(126, 37, 83);
+}
+#l1{display: flex;
+    gap: 15px;
+    font-size: 2.3rem;
+}
+#navitems{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+}
+a{
+text-decoration: none;
+color: rgb(126, 37, 83);
+}
+.footer{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+}
+.footer p{
+    color: rgb(126, 37, 83) ;
+}
+.contentbox{
+width: 55%;
+background-color: azure;
+margin: auto;
+
+display: flex;
+ flex-direction:column ;
+ gap: 30px;
+ padding: 2rem;
+ box-shadow: 0px 0px 15px rgb(8, 7, 7);
+
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s linear 0s;
+}
+.rightbox img{
+    margin: 5px;
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    transition: all 0.6s linear 0s;
+    flex-wrap: wrap;
+}
+.rightbox:hover{
+    transform: scale(1.2);
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.ing{
+    font-size: 1.5rem;
+}
+.recipe{
+    font-size: 1.1rem;
+}
+.rightbox .overlay{
+position: absolute;
+top: 0;
+left: 0;
+height:100%;
+width: 100%;
+background-color: rgba(47, 44, 44, 0.693);
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: all 0.6s linear 0s;
+
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    color: aliceblue;
+    font-size: 1.5rem;
+   
+}
+@media (max-width: 600px){
+    .contentbox{
+        width: 97%;
+    }
+    .rightbox img{
+        height: 100%;
+        width: 100%;
+    }
+    #brand{
+        font-size: 1.5rem;
+    }
+    #l1{
+        font-size: 1.5rem;
+    }
+}
